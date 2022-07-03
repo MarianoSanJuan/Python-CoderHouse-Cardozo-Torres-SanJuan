@@ -55,7 +55,7 @@ ROOT_URLCONF = 'CTSJ.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"/Users/MarianSanJuan/Desktop/Coderhouse/Python/EntregaIntermedia-Cardozo-TorresOrtiz-SanJuan/templates"],
+        'DIRS': [r"C:\Users\produ\Desktop\entrega_intermedia\Python-CoderHouse-Cardozo-Torres-SanJuan\templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
