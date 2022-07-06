@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% comment %} descomentar el boton al listado de personas {% endcomment %}
+
+{% block texto_h1 %}
+Creacion de personas <br>
+{% endblock texto_h1 %}
+
+{% block texto_h5 %}
+{% comment %} <button href= {% url 'listado_persona' %}>Listado personas</button> {% endcomment %}
+<form action={% url 'formulario' %} method="POST">
+    {% csrf_token %}
+   <table>
+       {{form}}
+   </table>
+    <button type="submit">crear</button>
+</form>
+{% endblock texto_h5 %}
+
+{% block informacion %}
+
+
+
+{% endblock informacion %}

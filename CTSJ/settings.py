@@ -56,6 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [r"C:\Users\produ\Desktop\entrega_intermedia\Python-CoderHouse-Cardozo-Torres-SanJuan\templates"],
+        'DIRS': ["templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

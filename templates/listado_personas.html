@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+
+{% block texto_h1 %}
+Listado de personas <br>
+{% endblock texto_h1 %}
+
+{% block texto_h5 %}
+
+    <form action={% url 'listado_persona' %}>
+        <label for="text">Busqueda</label>
+        {{form}}
+        <button>Buscar</button>
+    </form>
+
+
+    <h6>
+        <ul>
+            {% for persona in listado_personas %}
+            <li>{{persona}}</li>
+            {% endfor %}
+        </ul>
+    </h6>
+{% endblock texto_h5 %}
+
+{% block informacion %}
+
+
+
+{% endblock informacion %}
