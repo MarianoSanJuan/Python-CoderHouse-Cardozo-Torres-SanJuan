@@ -10,19 +10,23 @@ Listado de personas <br>
 
     <form action={% url 'listado_persona' %}>
         <label for="text">Busqueda</label>
-        {{form}}
+        <table>{{form}}</table>
+        
         <button>Buscar</button>
     </form>
 
 
     <h6>
         <ul>
-            {% for persona in listado_personas %}
+            {% for persona in listado_persona %}
             <li>{{persona}}</li>
             {% endfor %}
         </ul>
     </h6>
 {% endblock texto_h5 %}
+
+
+
 
 {% block informacion %}
 

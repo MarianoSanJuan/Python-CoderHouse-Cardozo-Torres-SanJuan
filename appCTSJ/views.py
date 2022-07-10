@@ -26,6 +26,7 @@ def herencia(request):
 
 def formulario(request):
     
+
     if request.method == 'POST':
         form = FormPersonas(request.POST)
 
@@ -61,5 +62,5 @@ def listado_persona(request):
     else:    
         listado_persona = Modelo_personas.objects.all()
     form = BusquedaPersona()
-    return render(request,'listado_persona.html',{'listado_persona': listado_persona, "form": form})
+    return render(request,'listado_personas.html',{'listado_persona': listado_persona, "form": form})
 
