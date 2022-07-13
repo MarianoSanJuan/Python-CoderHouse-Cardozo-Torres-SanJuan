@@ -8,13 +8,6 @@ from appCTSJ.models import Modelo_personas
 
 # Definición de view de la homels
 
-# def view_home(request):
-#     template = loader.get_template("home.html")
-#     render = template.render({})
-#     return HttpResponse(render)
-
-# Otra alternativa para la view de la home
-
 def view_home(request):
     
     return render(request,"home.html",{})
@@ -51,7 +44,6 @@ def formulario(request):
         return render(request,'formulario.html',{'form':form})
     
 
-    # falta hacer la vista en el listado de personas y activar la url
 
 def listado_persona(request):
     
